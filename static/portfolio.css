@@ -1,0 +1,126 @@
+/*.navBar {
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: none;
+    color: white;
+}*/
+
+*{
+    font-weight: lighter;
+}
+
+
+.portfolioContent {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 150px 50px 60px 50px;
+    max-width: 1520px;
+}
+
+h2 {
+    font-family: 'roboto';
+    font-size: 48px;
+}
+
+.websiteDivBig {
+    margin: 90px 0 30px 0;
+}
+
+.websiteOuter {
+    border-radius: 5px;
+}
+
+.websiteDivBig img {
+    border-radius: 5px;
+}
+
+
+.websiteDivSmall img {
+    border-radius: 5px;
+}
+
+
+.websiteInfo {
+    color: black;
+
+    padding-top: 20px;
+}
+
+/* made to stop the <a> link from being width 100% */
+.websiteInfo div {
+    display: flex;
+}
+
+.websiteInfo p {
+    color: #99f814;
+}
+
+h1 {
+    font-family: 'roboto';
+    font-size: 32px;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    text-decoration: underline;
+    text-decoration-color: #00b3ff00;
+    transition: 0.2s;
+}
+
+h1:hover {
+    text-decoration-color: #99f814;
+}
+
+p {
+    font-family: 'roboto';
+    font-size: 16px;
+}
+
+
+.smallerPrtf {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.websiteDivSmall {
+    width: 48%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 748px) {
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .portfolioContent {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 110px 25px 60px 25px;
+        max-width: 1470px;
+    }
+
+
+    .websiteDivBig {
+        margin: 50px 0 30px 0;
+    }
+
+
+    h1 {
+        font-size: 24px;
+    }
+
+
+    .smallTtl {
+        font-size: 18px;
+    }
+}

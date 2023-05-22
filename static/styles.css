@@ -1,276 +1,267 @@
-/*==========================
-    __              __     
-   / /_  ____  ____/ /_  __
-  / __ \/ __ \/ __  / / / /
- / /_/ / /_/ / /_/ / /_/ / 
-/_.___/\____/\__,_/\__, /  
-                  /____/   
-==========================*/
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #99f814 #ffffff;
+}
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #11ff00;
+    border-radius: 9px;
+    border: none;
+}
+
 
 body {
-  background-color: white;
+    background-color: white;
 }
 
 .bodyIndex {
-  background-image: url("../assets/placeholderImage.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center;
-  
+    background-image: url("../assets/game.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 100%; 
 }
 
 
+
 .container {
-  max-width: 1920px;
-  margin: auto;
-  width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    width: 100%;
 }
 
 
 .bodyTopper {
-  height: 60px;
+    height: 60px;
 }
-
-
-
-
-/*====================================
-  _   __            __              
- / | / /___ __   __/ /_  ____ ______
-/  |/ / __ `/ | / / __ \/ __ `/ ___/
-/ /|  / /_/ /| |/ / /_/ / /_/ / /    
-/_/ |_/\__,_/ |___/_.___/\__,_/_/     
-                                    
-====================================*/
 
 
 
 .navBar {
-
-  
-
-
-  height: 60px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 15px 50px black;
-  background-color: white;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  max-width: 1920px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 15px 50px black;
+    background-color: rgb(0, 0, 0);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    max-width: 1920px;
 }
 
 
 /* --- link to home page/about me --- */
-.neumann {
-  font-family: 'Lobster', cursive;
-  font-size: 32px;
 
-  /* makes every link after stick to the right side */
-  margin-right: auto;
-}
 
 
 /* make the links show up on the same horizontal level */
 .navUl {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 100%;
-  max-width: 1520px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    max-width: 1520px;
+    background-color: black;
+    color: #f5deb3;
 }
 
+.contactLink{
+    color: #99f814;
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin-left: inherit;
+}
 
 /* --- every link(li) in navbar
 /* set line height for links */
 .navUl > li {
-  line-height: 40px;
+    line-height: 40px;
 }
 li > a {
-  line-height: 40px;
+    line-height: 40px;
 }
 
 
 
 li > a {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-decoration-color: #00b3ff00;
-  transition: 0.2s;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #00b3ff00;
+    transition: 0.2s;
 }
 li > a:hover {
-  text-decoration-color: #00B2FF;
+    text-decoration-color: #99f814;
 }
 
 .neumann a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /* --- every link on the right side --- */
 .rightLinks {
-  font-size: 20px;
-  font-family: 'Roboto';
-  margin-left: 50px;
-  display: flex;
-  align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .icon {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .burgerMenu {
-  height: 32px;
-  width: 32px;
+    height: 32px;
+    width: 32px;
 }
 
 
 .burgerLi {
-      display: none;
-  }
+        display: none;
+    }
 
 
 @media only screen and (max-width: 920px) {
-  .burgerLi {
-      display: flex;
-  }
-  .rightLinks {
-      display: none;
-  }
+    .burgerLi {
+        display: flex;
+    }
+    .rightLinks {
+        display: none;
+    }
 }
 
 
 
 
 #myLinks {
-  display: none;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 60px;
-  position: fixed;
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 60px;
+    position: fixed;
 }
 
 
 #myLinks a {
-  width: 100%;
-  text-align: center;
-  padding: 5%;
-  background-color: rgb(255, 255, 255);
-  border-top: 2px solid;
-  border-color: rgb(168, 168, 168);
-  font-size: 14pt;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    background-color: rgb(255, 255, 255);
+    border-top: 2px solid;
+    border-color: rgb(168, 168, 168);
+    font-size: 14pt;
 }
 
 
 .lastLinkBrg {
-  border-bottom: 2px solid;
+    border-bottom: 2px solid;
 }
 
 
 
 
-
-
-
-/*=====================================
- _______________           ___      
-/ ____/_  __/   |     ____/ (_)   __
-/ /     / / / /| |    / __  / / | / /
-/ /___  / / / ___ |   / /_/ / /| |/ / 
-\____/ /_/ /_/  |_|   \__,_/_/ |___/  
-                                    
-=====================================*/
 
 
 
 /* --- entire div --- */
 .welcome {
 
-  width: 33%;
-  height: 80%;
-  padding-bottom: 100px;
+    width: 33%;
+    height: 80%;
+    padding-bottom: 100px;
 
-  width: 640px;
-  height: 550px;
-  padding-top: 95px;
-  padding-left: 115px;
-  padding-right: 50px;
+    width: 640px;
+    height: 550px;
+    padding-top: 95px;
+    padding-left: 100px;
+    padding-right: 50px;
 
-  
-  margin-bottom: -100px;
+    
+    margin-bottom: -100px;
 
 
-  margin-top: 133px;
-  margin-left: 171px;
+    margin-top: 133px;
+    margin-left: 171px;
 
-  /* Gives the contentdiv the shape of Fluid body.svg */
-  background: url("../assets/Rectangle\ 5.svg") no-repeat;
-  background-size: 100%; 
+    /* Gives the contentdiv the shape of Fluid body.svg */
 }
 
 /* --- h1 | Tjena, jag heter Albin! --- */
 .welcome h1 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 75px;
-  color: #3D3D3D;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+    color: #ffffff;
 }
 
 /* --- h2 | Frontend utvecklare --- */
 .welcome h2 {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-style: normal;
-  line-height: 38px;
-  font-size: 32px;
-  align-items: center;
-  display: flex;
-  margin-top: 5px;
-  margin-right: 50px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 38px;
+    font-size: 32px;
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+    margin-right: 50px;
+    color: #99f814;
 }
 
 /* --- p | Ung men erfaren inom.. --- */
 .welcome p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  font-family: 'Roboto';
-  margin-top: 8px;
-  margin-right: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Roboto';
+    margin-top: 8px;
+    margin-right: 50px;
+    color: #ffff;
 }
 
 /* --- a > div | Visa portfolio --- */
 .welcome div {
-  background-color: #00B2FF;
-  margin-left: 40px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
-  font-family: 'Roboto';
-  width: 159px;
-  height: 47px;
-  margin-top: 35px;
-  border-radius: 100px;
-  border: solid #00B2FF 3px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: white;
-  justify-content: center;
-  transition: .3s;
+    background-color: #99f814;
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    font-family: 'Roboto';
+    width: 159px;
+    height: 47px;
+    margin-top: 35px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    transition: .3s;
 
 }
 
 .welcome div:hover {
-  box-shadow: inset 0 0 0 3px white;
+    box-shadow: inset 0 0 0 3px white;
 }
 
 
@@ -279,134 +270,121 @@ li > a:hover {
 
 
 
-
-
-/*======================================
- ______            __             __ 
-/ ____/___  ____  / /____  ____  / /_
-/ /   / __ \/ __ \/ __/ _ \/ __ \/ __/
-/ /___/ /_/ / / / / /_/  __/ / / / /_  
-\____/\____/_/ /_/\__/\___/_/ /_/\__/  
-
-======================================*/
-
-
-
 .contentDiv {
-  /*margin-top: 62vh;*/
-  margin-top: 0;
+    /*margin-top: 62vh;*/
+    margin-top: 0;
 
-  min-width: 100%;
-  width: 100%;
+    min-width: 100%;
+    width: 100%;
 
-  /* totalt 424px */
-  padding-top: 110px;
+    /* totalt 424px */
+    padding-top: 110px;
 
-  /* Gives the contentdiv the shape of Fluid body.svg */
-  background: url("../assets/Fluid body.svg") no-repeat;
-  background-size: 100%;
+    /* Gives the contentdiv the shape of Fluid body.svg */
+    background: url("../assets/Fluid body.svg") no-repeat;
+    background-size: 100%;
 }
 
 
 
 .circleLinks {
-  margin: 0px 13%;
-  display: flex;
+    margin: 0px 13%;
+    display: flex;
 }
 
 
 .githubLink {
-  padding-top: 37px;
-  margin-left: auto;
-  margin-right: 12px;
+    padding-top: 37px;
+    margin-left: auto;
+    margin-right: 12px;
 }
 
 .linkedinLink {
-  margin-right: 0.5%;
+    margin-right: 0.5%;
 }
 
 .gmailLink {
-  padding-top: 37px;
-  margin-right: 3%;
+    padding-top: 37px;
+    margin-right: 3%;
 }
 
 
 .content {
-  margin-top: 198px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  max-width: 1520px;
-  background-color: white;
+    margin-top: 198px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1520px;
+    background-color: white;
 }
 
 
 
 .contentTitles div {
-  width: 33.3%;    
+    width: 33.3%;    
 }
 
 .contentTitles {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .content div h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  font-family: 'Josefin Sans';
-  color: #00B2FF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    font-family: 'Josefin Sans';
+    color: #99f814;
 }
 
 
 
 .content div h2 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    font-family: 'Roboto';
 }
 
 .content div h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  font-family: 'Josefin Sans';
-  color: #00B2FF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: 'Josefin Sans';
+    color: #99f814;
 }
 
 
 .content div p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Roboto';
 }
 
 
 .aboutMeTitleDiv {
-  margin-top: 310px;
-  
-  display: flex;
-  justify-content: center;
-  text-align: center;
+    margin-top: 310px;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 
 .littleAboutMe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 100px;
 }
 
 
 .littleAboutMe h1 {
-  margin: 30px 0;
-  color: #3D3D3D !important;
+    margin: 30px 0;
+    color: #3D3D3D !important;
 }
 
 
@@ -418,21 +396,23 @@ li > a:hover {
 
 
 .aboutMe {
-  margin-top: 300px;
-  padding-bottom: 15%;
+    margin-top: 300px;
+    padding-bottom: 15%;
+    padding-top: 50px;
+    text-align: center;
 }
 
 
 
 .aboutMe-p {
-  margin-top: 40px;
-  font-size: 24px;
+    margin-top: 40px;
+    font-size: 24px;
 }
 
 
 
 .aboutMe-h1 {
-  font-size: 48px;
+    font-size: 48px;
 }
 
 
@@ -442,15 +422,15 @@ li > a:hover {
 
 /*
 @media only screen and (max-width: 1852px) {
-  .welcome h1 {
-      font-size: 56px;
-  }
-  .welcome h2 {
-      font-size: 26px;
-  }
-  .welcome p {
-      font-size: 16px;
-  }
+    .welcome h1 {
+        font-size: 56px;
+    }
+    .welcome h2 {
+        font-size: 26px;
+    }
+    .welcome p {
+        font-size: 16px;
+    }
 }
 */
 
@@ -461,31 +441,31 @@ li > a:hover {
 
 
 @media only screen and (max-width: 1440px) {
-  .bodyIndex {
-      background-size: 140%;
-  }
+    .bodyIndex {
+        background-size: 140%;
+    }
 
 
 
-  .welcome {
-      width: 100%;
-      margin: 0;
-      margin-top: 300px;
+    .welcome {
+        width: 100%;
+        margin: 0;
+        margin-top: 300px;
 
-      padding-top: 30px;
-      padding-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
-      height: auto;
+        height: auto;
 
-      background: none;
-      background-color: white;
-  }
+        background: none;
+        background-color: white;
+    }
 
 
 
-  .contentDiv {
-      margin-top: 15%;
-  }
+    .contentDiv {
+        margin-top: 15%;
+    }
 
 }
 
@@ -494,59 +474,59 @@ li > a:hover {
 
 
 @media only screen and (max-width: 748px) {
-  
+    
 
-  .bodyIndex {
-      background-size: 170%;
-  }
-  
-  
-  
-  /* --- entire div --- */
+    .bodyIndex {
+        background-size: 170%;
+    }
+    
+    
+    
+    /* --- entire div --- */
 
 .welcome {
-  padding-left: 25px;
-  padding-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 
-  margin-bottom: 0;
+    margin-bottom: 0;
 
 
-  margin-top: 180px;
-  margin-left: 0;
+    margin-top: 180px;
+    margin-left: 0;
 }
 
 /* --- h1 | Tjena, jag heter Albin! --- */
 .welcome h1 {
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
 }
 
 /* --- h2 | Frontend utvecklare --- */
 .welcome h2 {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-style: normal;
-  line-height: 24px;
-  font-size: 24px;
-  display: block;
-  margin-right: 0;
-  text-align: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 24px;
+    display: block;
+    margin-right: 0;
+    text-align: center;
 }
 
 /* --- p | Ung men erfaren inom.. --- */
 .welcome p {
-  font-size: 18px;
-  line-height: 18px;
-  margin-right: 0;
-  text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 0;
+    text-align: center;
 }
 
 /* --- a > div | Visa portfolio --- */
 .welcome div {
-  margin-left: 0;
-  margin: auto;
-  margin-top: 35px;
+    margin-left: 0;
+    margin: auto;
+    margin-top: 35px;
 
 }
 
@@ -555,53 +535,53 @@ li > a:hover {
 
 
 .contentDiv {
-  background: none;
-  background-color: white;
-  margin-top: 0;
-  padding-top: 50px;
+    background: none;
+    background-color: white;
+    margin-top: 0;
+    padding-top: 50px;
 }
 
 
 
 .circleLinks {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .circleLinks div {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .contentTitles div {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
 
 .contentTitles {
-  display: block;
+    display: block;
 }
 
 
 .content div h1 {
-  font-size: 48px;
+    font-size: 48px;
 }
 .content div h2 {
-  font-size: 32px;
-  margin-bottom: 50px;
+    font-size: 32px;
+    margin-bottom: 50px;
 }
 .content div h3 {
-  font-size: 36px;
-  text-align: center;
+    font-size: 36px;
+    text-align: center;
 }
 
 .aboutMe {
-  margin-top: 200px;
+    margin-top: 200px;
 }
 .aboutMe-p {
-  margin-top: 20px;
-  font-size: 18px !important;
+    margin-top: 20px;
+    font-size: 18px !important;
 }
 
 
