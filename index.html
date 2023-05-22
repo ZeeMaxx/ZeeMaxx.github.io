@@ -4,13 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Semin Zukic</title>
+
+
+    <!-- Title & Icon -->
+
+    <title>Albin Neumann - Om mig</title>
+    <link rel="shortcut icon" type="image/png" href="assets/N.png">
+
+
+    <!-- link to Styles and scripts -->
+
+    <link rel="stylesheet" href="static/reset.css">
+    <link rel="stylesheet" href="static/styles.css">
+
+    <script src="static/script.js"></script>
+
+
+    <!-- Google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <div class="name">
-    <h1>Hey, I'm Semin Zukic</h1>
-    <p>Im a web developer and <br> proffesional capper</p>
+<body class="container bodyIndex">
+    <!-- Navbar -->
+    <nav class="navBar">
+        <ul class="navUl">
+            <li class="neumann"><a href="index.html">Neumann</a></li>
+            <li class="rightLinks rightLink"><a href="index.html">Om mig</a></li>
+            <li class="rightLinks"><a href="portfolio.html">Portfolio</a></li>
+            <li class="rightLinks"><a href="assets/CV.pdf" download="" target="_blank">Ladda ner CV</a></li>
+            <li class="rightLinks"><a href="mailto:albin.neumann@gmail.com" target="_blank">Kontakta mig</a></li>
+            <li class="burgerLi"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="static/burger.svg" alt="Dropdown Button" class="burgerMenu">
+            </a></li>
+        </ul>
+    </nav>
+    <div id="myLinks">
+        <a href="index.html">Om mig</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="assets/CV.pdf" download="" target="_blank">Ladda ner CV</a>
+        <a href="mailto:albin.neumann@gmail.com" target="_blank" class="lastLinkBrg">Kontakta mig</a>
+    </div>
+
+    <div class="bodyTopper"></div>
+
+    <div class="welcome">
+        <h1>Tjena, jag heter Albin!</h1>
+        <h2>Frontend utvecklare</h2>
+        <p>Ung men erfaren inom frontend med starkt fokus på hög kvalitet</p>
+        <a href="portfolio.html"><div>Visa portfolio</div></a>
+        
+    </div>
+
+
+
+    <div class="contentDiv">
+
+        <div class="circleLinks">
+            <div class="githubLink">
+                <a href="https://github.com/BruhNeumann" target="_blank"><img src="assets/Github.png" alt="Github Icon"></a>
+            </div>
+            <div class="linkedinLink">
+                <a href="https://www.linkedin.com/in/albin-neumann-982b06258/" target="_blank"><img src="assets/Linkedin.png" alt="Linkedin Icon"></a>
+            </div>
+            <div class="gmailLink">
+                <a href="mailto:albin.neumann@gmail.com" target="_blank"><img src="assets/Mail.png" alt="Gmail Icon"></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="contentTitles">
+                <div>
+                    <h1>UI</h1>
+                    <h2>User Interface</h2>
+                </div>
+                <div>
+                    <h1>DEV</h1>
+                    <h2>Front-End Developer</h2>
+                </div>
+                <div>
+                    <h1>UX</h1>
+                    <h2>User Experience</h2>
+                </div>
+            </div>
+
+
+            <!--
+            <div class="aboutMeTitleDiv">
+                <div class="littleAboutMe">
+                    <h1>LITE</h1>
+                    <h1>OM</h1>
+                    <h1>MIG</h1>
+                </div>
+                <img src="assets/screen_guy.svg" alt="computer illustration">
+            </div>
+        -->
+
+            <div class="aboutMe">
+                <h3 class="aboutMe-h1">Jag heter Albin</h3>
+                <p class="aboutMe-p">Passionerad och kreativ på 18 år med ett stort intresse för front-end utveckling. Min fascination för 
+                    webbdesign har med åren lett mig till stor kunskap inom front-end utveckling. Se mitt portfolio för exempel på projekten jag jobbat på.
+                <br><br>
+                Med en stark vilja att alltid förbättra mig själv och mina fördigheter arbetar jag hårt för att perfektionera mina tekniska kunskaper, 
+                samtidigt om jag har behållit en nytänkande och kreativ inställning till problemlösning.
+                <br><br>
+                Jag är en duktig samarbetare och älskar att arbeta i ett team, men har också bra förmåga att arbeta självständigt från idé till en välutvecklad
+                 webbsida. Jag har möjlighet att arbeta både på plats och på distans.
+                <br><br>
+                Jag ser fram emot att fortsätta min utveckling som front-end utvecklare och att det kan leda till bra arbetsmöjligheter.</p>
+            </div>
+
+
+
+        </div>
+
+        
+
     </div>
 </body>
 </html>
