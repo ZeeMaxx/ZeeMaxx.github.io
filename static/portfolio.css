@@ -8,12 +8,16 @@
     font-weight: lighter;
 }
 
+body{
+    max-height: 1080px;
+}
 
 .portfolioContent {
     margin-left: auto;
     margin-right: auto;
     padding: 150px 50px 60px 50px;
     max-width: 1520px;
+   
 }
 
 h2 {
@@ -26,11 +30,11 @@ h2 {
 }
 
 .websiteOuter {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .websiteDivBig img {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 
@@ -72,6 +76,8 @@ h1:hover {
 p {
     font-family: 'roboto';
     font-size: 16px;
+    font-weight: bold;
+    color: #99f814;
 }
 
 
@@ -84,13 +90,6 @@ p {
 .websiteDivSmall {
     width: 48%;
 }
-
-
-
-
-
-
-
 
 
 
