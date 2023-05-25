@@ -1,7 +1,6 @@
 
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
+
   * {
     scrollbar-width: auto;
     scrollbar-color: #99f814 #ffffff;
@@ -56,19 +55,14 @@ body {
     align-items: center;
     box-shadow: 0 15px 50px black;
     background-color: rgb(0, 0, 0);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
     
 }
 
 
-/* --- link to home page/about me --- */
 
-
-
-/* make the links show up on the same horizontal level */
 .navUl {
     display: flex;
     margin-left: auto;
@@ -88,8 +82,7 @@ body {
     margin-left: inherit;
 }
 
-/* --- every link(li) in navbar
-/* set line height for links */
+
 .navUl > li {
     line-height: 40px;
 }
@@ -111,7 +104,7 @@ li > a:hover {
 
 
 
-/* --- every link on the right side --- */
+
 .rightLinks {
     font-size: 20px;
     font-family: 'Roboto';
@@ -178,7 +171,7 @@ li > a:hover {
 
 
 
-/* --- entire div --- */
+
 .welcome {
 
     width: 33%;
@@ -198,7 +191,7 @@ li > a:hover {
     margin-top: 133px;
     margin-left: 171px;
 
-    /* Gives the contentdiv the shape of Fluid body.svg */
+    
 }
 
 
@@ -237,7 +230,7 @@ li > a:hover {
     color: #ffff;
 }
 
-/* --- a > div | Visa portfolio --- */
+
 .welcome div {
     background-color: #99f814;
     margin-left: 40px;
@@ -270,16 +263,16 @@ li > a:hover {
 
 
 .contentDiv {
-    /*margin-top: 62vh;*/
+    
     margin-top: 0;
 
     min-width: 100%;
     width: 100%;
 
-    /* totalt 424px */
-    padding-top: 65px;
+    
+    padding-top: 0px;
 
-    /* Gives the contentdiv the shape of Fluid body.svg */
+   
     background: url("../assets/Fluid body.svg") no-repeat;
     background-size: 100%;
 }
@@ -288,7 +281,7 @@ li > a:hover {
 
 
 .content {
-    margin-top: 198px;
+    margin-top: px;
     margin-left: auto;
     margin-right: auto;
     max-width: 100vw;
@@ -401,21 +394,6 @@ footer{
 
 
 
-/*
-@media only screen and (max-width: 1852px) {
-    .welcome h1 {
-        font-size: 56px;
-    }
-    .welcome h2 {
-        font-size: 26px;
-    }
-    .welcome p {
-        font-size: 16px;
-    }
-}
-*/
-
-
 
 
 
@@ -463,7 +441,7 @@ footer{
     
     
     
-    /* --- entire div --- */
+ 
 
 .welcome {
     padding-left: 25px;
@@ -503,7 +481,7 @@ footer{
     text-align: center;
 }
 
-/* --- a > div | Visa portfolio --- */
+
 .welcome div {
     margin-left: 0;
     margin: auto;

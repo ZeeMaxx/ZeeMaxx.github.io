@@ -1,16 +1,9 @@
-/*.navBar {
-    background-color: rgba(0,0,0,0.5);
-    box-shadow: none;
-    color: white;
-}*/
 
 *{
     font-weight: lighter;
 }
 
-body{
-    max-height: 1080px;
-}
+
 
 .portfolioContent {
     margin-left: auto;
@@ -49,7 +42,6 @@ h2 {
     padding-top: 20px;
 }
 
-/* made to stop the <a> link from being width 100% */
 .websiteInfo div {
     display: flex;
 }
